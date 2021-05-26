@@ -1,0 +1,131 @@
+$heroEdge: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+	rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+$invertedEdge: rgba(97, 97, 97, 0.25) 0px 30px 60px 12px inset,
+	rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+.heroGrid {
+	margin: auto;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-auto-rows: minmax(100px, min-content);
+	background-color: whitesmoke;
+	padding-bottom: 50px;
+	box-shadow: $invertedEdge;
+}
+
+// .blueBox {
+// 	background-color: cyan;
+// 	width: 100%;
+// 	border-color: blue;
+// 	border-style: dashed;
+// 	border-width: 1px;
+// }
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel {
+	margin: auto;
+	margin-top: 5vh;
+	border-radius: 30px;
+	background-color: white;
+	width: 50vw;
+	box-shadow: $heroEdge;
+	height: max-content;
+	text-decoration: none;
+
+	.carouselIMG {
+		object-fit: contain;
+		width: 100vw;
+		height: auto;
+		margin: 10px;
+		margin-bottom: 40px;
+		// padding: 10px;
+		border-radius: 30px;
+		cursor: pointer;
+	}
+
+	.swiper-pagination {
+		background-color: #fff;
+		// margin-top: 100px;
+		padding-top: 5px;
+		z-index: 2;
+	}
+
+	#pic2 {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.carousel {
+		justify-self: center;
+		width: 510px;
+		border-radius: 0px;
+		border-radius: 10px;
+
+		.carouselIMG {
+			object-fit: scale-down;
+			width: 100%;
+			min-width: 200px;
+			height: auto;
+			margin: 10px;
+			margin-bottom: 50px;
+			border-radius: 10px;
+		}
+	}
+	#pic2 {
+		margin: 10px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.carousel {
+		justify-self: center;
+		width: 80%;
+		border-radius: 0px;
+		border-radius: 10px;
+
+		.carouselIMG {
+			object-fit: scale-down;
+			width: 100%;
+			min-width: 200px;
+			height: auto;
+			margin: 10px;
+			margin-bottom: 50px;
+			border-radius: 10px;
+		}
+	}
+	#pic2 {
+		margin: 10px;
+	}
+}
