@@ -16,10 +16,18 @@ $hoveringEdge2: rgba(0, 0, 0, 0.19) 0px 10px 20px,
 $hoveringEdge3: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 	rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
+$card: #f8f8f8;
+
 .h1 {
 	grid-column: 1 / 1;
 	grid-row: 1/ 1;
 	font-size: 2rem;
+}
+
+.card {
+	box-shadow: $hoveringEdge1;
+	background-color: #f8f8f8;
+	border-radius: 20px;
 }
 
 .scaleAnimation {
@@ -58,24 +66,52 @@ $hoveringEdge3: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 	gap: 20px;
 }
 
-.newGames {
-	// grid-area: newGames;
-	background-color: #f8f8f8;
+.latestNews {
+	margin: auto;
+	grid-column: 4 / 4;
+	grid-row: 1 / 5;
+	width: 100%;
+	height: 100vh;
 	border-radius: 20px;
+	padding: 20px;
+	overflow: scroll;
+	top: 0%;
+	margin-top: 20px;
+
+	ul li {
+		list-style: none;
+	}
+
+	li {
+		margin-top: 10px;
+		background-color: rgb(232, 232, 232);
+		padding: 10px;
+	}
+	.icon {
+		width: 100px;
+		height: auto;
+		object-fit: contain;
+		align-self: start;
+	}
+	.smallText {
+		// margin: 5px;
+		margin-top: 0;
+		font-size: 0.6rem;
+		background-color: #f2f2f2;
+		color: black;
+		padding: 10px;
+	}
+}
+
+.newGames {
 	padding: 20px;
 	grid-column: 1 / 4;
 	grid-row: 1 / 3;
 	width: 100%;
 	height: 100%;
-	// border-color: rgb(13, 255, 0);
-	// border-width: 1px;
-	// border-style: dashed;
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
-	// grid-auto-rows: 300px;
 	grid-auto-rows: auto;
-	// gap: 10px;
-	box-shadow: $hoveringEdge1;
 
 	#pkmnSnap {
 		grid-column: 1 / 1;
@@ -131,35 +167,16 @@ $hoveringEdge3: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 	}
 }
 
-.latestNews {
-	// grid-area: latestNews;
-	margin: auto;
-	grid-column: 4 / 4;
-	grid-row: 1 / 5;
-	width: 100%;
-	height: 100%;
-	border-radius: 20px;
-	padding: 20px;
-	background-color: #f8f8f8;
-	// border-color: rgb(255, 0, 195);
-	// border-width: 1px;
-	// border-style: dashed;
-	box-shadow: $hoveringEdge1;
-}
-
 .switchBundles {
 	justify-self: center;
 	grid-column: 1 / 4;
 	grid-row: 3 / 4;
-	background-color: #f8f8f8;
-	border-radius: 20px;
 	padding: 20px;
 	width: 100%;
 	height: 100%;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	grid-auto-rows: auto;
-	box-shadow: $hoveringEdge1;
 
 	#bundle1 {
 		grid-column: 1 / 1;
@@ -177,14 +194,17 @@ $hoveringEdge3: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 		grid-column: 2 / 2;
 		grid-row: 3/ 3;
 	}
-	.bundle > img {
+	.bundle {
 		justify-self: center;
 		justify-items: center;
 		justify-content: center;
-		width: 70%;
+		text-align: center;
+		width: 80%;
+		padding: 10px;
 		height: auto;
 		object-fit: contain;
-		cursor: pointer;
+		// cursor: pointer;
+		margin: auto;
 	}
 }
 
@@ -192,11 +212,10 @@ $hoveringEdge3: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 	// grid-area: registerEshop;
 	grid-column: 1 / 4;
 	grid-row: 4 / 4;
-	width: 100%;
-	height: 100%;
-	border-color: rgb(255, 119, 0);
-	border-width: 1px;
-	border-style: dashed;
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 .moreGames {
 	// grid-area: moreGames;

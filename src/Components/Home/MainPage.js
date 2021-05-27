@@ -1,5 +1,9 @@
 import React from 'react'
+import LatestNews from './LatestNews'
+
+//
 import './home.scss'
+import '../../static/styles/g-Styles.scss'
 
 //imageImports
 ////NEWGAMES
@@ -16,13 +20,17 @@ import bundle2 from '../../static/images/store/greyComsoleSwitch.png'
 import bundle3 from '../../static/images/store/animalCrossingBundle.png'
 import bundle4 from '../../static/images/store/monsterHunter.png'
 
+//eshop
+import eshop from '../../static/images/svg/mainPageContent/eShop.svg'
 
 function MainPage() {
     return (
      <article className="container">
+    
         <section className="mainPageGrid">
+        <LatestNews> </LatestNews>
         
-            <div className="newGames"> 
+            <div className="newGames "> 
             <h1 className="h1">New Games</h1>
             <img className="scaleAnimation" id="pkmnSnap" src={pkmnSnap} alt="Pokemon Snap!" />
             <img className="scaleAnimation" id="amiibo" src={amiibo} alt="" />
@@ -34,44 +42,50 @@ function MainPage() {
             
             
              </div>
+
+
             <div className="switchBundles">
             <h1 className="h1">Store Bundles</h1>
 
             <div className="bundle" id="bundle1" >
-                <img src={bundle1} alt="" />
-                <div className="bundlesOverlay">
+                <img className="bundle pointer" src={bundle1} alt="" />
+                <div className="bundlesOverlay pointer">
                     <h1>Original Switch Bundle</h1>
-                    <p>something</p>
+                    <p>£299</p>
                 </div>
             </div>
 
             <div className="bundle"  id="bundle2">
-            <img src={bundle2} alt="" />
-                <div className="bundlesOverlay">
+            <img className="bundle pointer" src={bundle2} alt="" />
+                <div className="bundlesOverlay pointer">
                     <h1>Grey Switch Bundle</h1>
-                    <p>something</p>
+                    <p>£299</p>
                 </div>
             </div>
             
             <div className="bundle" id="bundle3" >
-            <img src={bundle3} alt="" />
-                <div className="bundlesOverlay">
+            <img className="bundle pointer" src={bundle3} alt="" />
+                <div className="bundlesOverlay pointer">
                     <h1>Animal Crossing Switch Bundle</h1>
-                    <p>something</p>
+                    <p>£320</p>
                 </div>
             </div>
 
             <div className="bundle" id="bundle4" >
-            <img src={bundle4} alt="" />
-                <div className="bundlesOverlay">
+            <img className="bundle pointer" src={bundle4} alt="" />
+                <div className="bundlesOverlay pointer">
                     <h1>Monster Hunter Switch Bundle</h1>
-                    <p>something</p>
+                    <p>£320</p>
                 </div>
             </div>
 
             </div>
-            <div className="latestNews"><h1> | Latest News</h1> </div>
-            <div className="registerEshop">registerEshop  </div>
+            
+
+
+            <div className="registerEshop">
+                <img src={eshop} alt="" />
+            </div>
             <div className="moreGames">moreGames</div>
         </section>
      </article>
