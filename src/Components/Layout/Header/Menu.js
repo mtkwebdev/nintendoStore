@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './headerStyles.scss'
-import nswitch from '../../static/images/menuIcons/switch.png'
-import ngames from '../../static/images/menuIcons/games.png'
+import '../Layout.scss'
+import nswitch from '../../../static/images/menuIcons/switch.png'
+import ngames from '../../../static/images/menuIcons/games.png'
 
 function Menu() {
     return (

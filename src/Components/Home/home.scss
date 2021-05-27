@@ -19,6 +19,8 @@ $hoveringEdge3: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 $card: #f8f8f8;
 
 .h1 {
+	// margin-top: -5%;
+	// margin-bottom: 0%;
 	grid-column: 1 / 1;
 	grid-row: 1/ 1;
 	font-size: 2rem;
@@ -36,20 +38,7 @@ $card: #f8f8f8;
 }
 .scaleAnimation:hover {
 	transform: scale(0.95);
-	box-shadow: $heroEdge;
 	border-radius: 20px;
-}
-.borderAnimation {
-	transition: all 0.2s ease-in-out;
-	border-color: none;
-	border-width: 0px;
-	border-style: none;
-}
-.borderAnimation:hover {
-	transform: scale(0.8);
-	border-color: rgb(211, 211, 211);
-	border-width: 2px;
-	border-style: solid;
 }
 
 .mainPageGrid {
@@ -57,9 +46,6 @@ $card: #f8f8f8;
 	margin-top: 50px;
 	width: 80%;
 	height: fit-content;
-	// border-color: blue;
-	// border-width: 1px;
-	// border-style: dashed;
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-auto-rows: auto;
@@ -76,7 +62,7 @@ $card: #f8f8f8;
 	padding: 20px;
 	overflow: scroll;
 	top: 0%;
-	margin-top: 20px;
+	margin-top: 68px;
 
 	ul li {
 		list-style: none;
@@ -206,6 +192,19 @@ $card: #f8f8f8;
 		// cursor: pointer;
 		margin: auto;
 	}
+
+	.bundle > img {
+		border-color: rgb(218, 218, 218);
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 30px;
+	}
+	.bundle > img :hover {
+		border-color: rgb(218, 218, 218);
+		border-width: 1px;
+		border-style: solid;
+		border-radius: 30px;
+	}
 }
 
 .registerEshop {
@@ -216,14 +215,16 @@ $card: #f8f8f8;
 		width: 100%;
 		height: auto;
 	}
+	margin-bottom: 50px;
 }
 .moreGames {
+	display: none;
 	// grid-area: moreGames;
 	grid-column: 1 / 5;
 	grid-row: 5 / 6;
 	width: 100%;
 	height: 100%;
-	border-color: rgb(0, 169, 135);
-	border-width: 1px;
-	border-style: dashed;
+	// border-color: rgb(0, 169, 135);
+	// border-width: 1px;
+	// border-style: dashed;
 }

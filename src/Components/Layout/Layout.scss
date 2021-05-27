@@ -3,14 +3,13 @@ $nintendoRed: rgb(230, 0, 0);
 $menuHover: rgb(200, 0, 0);
 $paperWhite: rgb(237, 239, 241);
 
-.logoContainer {
+.headerLogoContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 	width: 100%;
 	height: fit-content;
 	margin: auto;
-
 	background-color: $nintendoRed;
 	.logo {
 		align-self: flex-start;
@@ -56,6 +55,50 @@ $paperWhite: rgb(237, 239, 241);
 		.extraPadding {
 			font-size: 0.4rem;
 			// padding: 5px;
+		}
+	}
+}
+
+.footerLogoContainer {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: $nintendoRed;
+	margin: auto;
+	.logo80s {
+		height: 50px;
+		width: auto;
+	}
+	.footerContainer {
+		background-color: $menuHover;
+		width: 100%;
+		color: white;
+		align-items: space-between;
+		.footerContent {
+			margin-top: 20px;
+			width: 98%;
+			margin: auto;
+			align-items: space-between;
+		}
+		.footerContent > .row > h4 {
+			font-size: 0.8rem;
+			font-weight: 500;
+			padding: 10px;
+			padding-top: 15px;
+			margin-right: 10px;
+		}
+		.footerContent > .row > p {
+			font-size: 0.7rem;
+			font-weight: 300;
+			padding: 10px;
+		}
+		.copyright {
+			text-align: end;
+			font-size: 0.6rem;
+			font-weight: 400;
+			margin-right: 10px;
+			margin-bottom: 20px;
 		}
 	}
 }

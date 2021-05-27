@@ -1,26 +1,16 @@
 import React from 'react'
 import '../static/styles/g-Styles.scss'
-
-import Header from '../Components/Header/Header'
+import Layout from '../Components/Layout/Layout'
 import Hero from '../Components/Hero/Hero'
 import MainPage from '../Components/Home/MainPage'
 
 function index() {
   return (
     <div >
-    <section>
-    <Header></Header>
+    <Layout>
     <Hero ></Hero>
     <MainPage></MainPage>
-    
-
-    </section>
-
-    <main>
-
-    
-    </main>
-
+    </Layout>
     </div>
   )
 }

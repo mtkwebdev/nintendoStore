@@ -21,11 +21,11 @@ import pic4 from '../../static/images/svg/slider/myNintendo.svg'
 // import Swiper core and required modules
 
 import SwiperCore, {
-    Pagination,Navigation
+    Pagination,Navigation, Autoplay
   } from 'swiper/core';
   
   // install Swiper modules
-  SwiperCore.use([Pagination,Navigation]);
+  SwiperCore.use([Pagination,Navigation, Autoplay]);
 
 
 export default function App() {
@@ -34,7 +34,7 @@ export default function App() {
   
   return (
     <>
-    <Swiper slidesPerView={1} spaceBetween={1} loop={true} pagination={{"clickable": true}} navigation={true} className="mySwiper carousel">
+    <Swiper className="swiperConfig" slidesPerView={1} spaceBetween={1} autoplay={{ delay: 3000 }} loop={true} pagination={{"clickable": true}} navigation={true} className="mySwiper autoplay play carousel">
     <SwiperSlide > <img src={pic1} className="carouselIMG" alt="" /></SwiperSlide>
     <SwiperSlide > <img id="pic2" src={pic2} className="carouselIMG" alt="" /> </SwiperSlide>
     <SwiperSlide > <img src={pic3} className="carouselIMG" alt="" /> </SwiperSlide>

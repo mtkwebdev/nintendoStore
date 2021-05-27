@@ -54,6 +54,13 @@ $invertedEdge: rgba(97, 97, 97, 0.25) 0px 30px 60px 12px inset,
 	object-fit: cover;
 }
 
+.swiper-button-prev {
+	margin-left: 10px;
+}
+.swiper-button-next {
+	margin-right: 10px;
+}
+
 .carousel {
 	margin: auto;
 	margin-top: 5vh;
