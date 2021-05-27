@@ -1,0 +1,81 @@
+import React from 'react'
+import './home.scss'
+
+//imageImports
+////NEWGAMES
+import pkmnSnap from '../../static/images/newGames/pkmnSnap.jpeg'
+import amiibo from '../../static/images/newGames/amiibo.jpeg'
+import animalCrossing from '../../static/images/newGames/animalCrossing.jpeg'
+import marioGolf from '../../static/images/newGames/marioGolf.jpeg'
+import pacman from '../../static/images/newGames/pacman.jpeg'
+import superMario3dWorld from '../../static/images/games/superMario/superMario3dWorld.jpg'
+
+//Switch Bundles
+import bundle1 from '../../static/images/store/normalConsoleSwitch.png'
+import bundle2 from '../../static/images/store/greyComsoleSwitch.png'
+import bundle3 from '../../static/images/store/animalCrossingBundle.png'
+import bundle4 from '../../static/images/store/monsterHunter.png'
+
+
+function MainPage() {
+    return (
+     <article className="container">
+        <section className="mainPageGrid">
+        
+            <div className="newGames"> 
+            <h1 className="h1">New Games</h1>
+            <img className="scaleAnimation" id="pkmnSnap" src={pkmnSnap} alt="Pokemon Snap!" />
+            <img className="scaleAnimation" id="amiibo" src={amiibo} alt="" />
+            <img className="scaleAnimation" id="animalCrossing" src={animalCrossing} alt="" />
+            <img className="scaleAnimation" id="marioGolf" src={marioGolf} alt="" />
+            <img className="scaleAnimation" id="pacman" src={pacman} alt="" />
+            <img className="scaleAnimation" id="superMario3dWorld" src={superMario3dWorld} alt="" />
+            
+            
+            
+             </div>
+            <div className="switchBundles">
+            <h1 className="h1">Store Bundles</h1>
+
+            <div className="bundle" id="bundle1" >
+                <img src={bundle1} alt="" />
+                <div className="bundlesOverlay">
+                    <h1>Original Switch Bundle</h1>
+                    <p>something</p>
+                </div>
+            </div>
+
+            <div className="bundle"  id="bundle2">
+            <img src={bundle2} alt="" />
+                <div className="bundlesOverlay">
+                    <h1>Grey Switch Bundle</h1>
+                    <p>something</p>
+                </div>
+            </div>
+            
+            <div className="bundle" id="bundle3" >
+            <img src={bundle3} alt="" />
+                <div className="bundlesOverlay">
+                    <h1>Animal Crossing Switch Bundle</h1>
+                    <p>something</p>
+                </div>
+            </div>
+
+            <div className="bundle" id="bundle4" >
+            <img src={bundle4} alt="" />
+                <div className="bundlesOverlay">
+                    <h1>Monster Hunter Switch Bundle</h1>
+                    <p>something</p>
+                </div>
+            </div>
+
+            </div>
+            <div className="latestNews"><h1> | Latest News</h1> </div>
+            <div className="registerEshop">registerEshop  </div>
+            <div className="moreGames">moreGames</div>
+        </section>
+     </article>
+    )
+}
+
+export default MainPage

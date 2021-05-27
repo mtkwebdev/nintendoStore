@@ -1,8 +1,8 @@
 import React from 'react'
 
-import './headerStyles.css'
-import nswitch from '../../images/svg/switch.svg'
-import ngames from '../../images/svg/games.svg'
+import './headerStyles.scss'
+import nswitch from '../../static/images/menuIcons/switch.png'
+import ngames from '../../static/images/menuIcons/games.png'
 
 function Menu() {
     return (
@@ -13,9 +13,9 @@ function Menu() {
                 <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
                 <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
                 <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
+                {/* <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
                 <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
-                <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
-                <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
+                <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li> */}
          
   
             </nav>

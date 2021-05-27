@@ -1,5 +1,5 @@
 import React from 'react'
-import './mario.css'
+import './mario.scss'
 import coin from '../../images/superMario/coin.png'
 import coinbox from '../../images/superMario/coinbox2.jpeg'
 import mario from '../../images/superMario/mario.png'

@@ -1,19 +1,14 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
-import './hero.css'
-
-
-
+import './hero.scss'
 
 
 function Hero() {
     return (
-        
         <div className="heroGrid">
-         <div className="blueBox"></div>
+        <div></div>
         <ImageSlider className="carousel"></ImageSlider>
-        <div className="blueBox"></div>
-   
+        <div></div>
         </div>
        
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import Menu from './Menu'
-import logo from '../../images/logo.png'
-import './headerStyles.css'
+import logo from '../../static/images/logo.png'
+import './headerStyles.scss'
 
 //Component Assets
 
