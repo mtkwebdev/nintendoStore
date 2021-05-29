@@ -41,24 +41,25 @@ $paperWhite: rgb(237, 239, 241);
 		z-index: 5;
 		display: flex;
 		flex-direction: column;
-		align-self: center;
 		background: none;
 		width: 100%;
-		margin: auto;
 		margin-bottom: 20px;
+		margin-top: 10px;
 
 		.menuItem {
+			// margin-right: -5%;
 			cursor: pointer;
 			z-index: 5;
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
+			align-self: flex-end;
 			padding: 20px;
 			color: white;
-			text-align: left;
+			text-align: right;
 			overflow-y: auto;
 			height: 100%;
-			width: 100%;
+			width: 30%;
 			border: solid 1px $menuHover;
 			background-color: $nintendoRed;
 
@@ -66,7 +67,7 @@ $paperWhite: rgb(237, 239, 241);
 				display: flex;
 				justify-self: flex-end;
 				margin-right: 20px;
-				margin-left: 40px;
+				margin-left: 20px;
 				width: 40px;
 			}
 		}
@@ -83,7 +84,7 @@ $paperWhite: rgb(237, 239, 241);
 	flex-direction: column;
 	align-items: flex-start;
 	background-color: $nintendoRed;
-	margin: auto;
+
 	.logo80s {
 		height: 50px;
 		width: auto;
@@ -92,14 +93,16 @@ $paperWhite: rgb(237, 239, 241);
 		background-color: $menuHover;
 		width: 100%;
 		color: white;
-		align-items: space-between;
+
 		.footerContent {
+			flex-wrap: wrap;
 			margin-top: 20px;
 			width: 98%;
 			margin: auto;
 			align-items: space-between;
 		}
 		.footerContent > .row > h4 {
+			flex-wrap: wrap;
 			font-size: 0.8rem;
 			font-weight: 500;
 			padding: 10px;
@@ -107,16 +110,65 @@ $paperWhite: rgb(237, 239, 241);
 			margin-right: 10px;
 		}
 		.footerContent > .row > p {
+			flex-wrap: wrap;
 			font-size: 0.7rem;
 			font-weight: 300;
 			padding: 10px;
 		}
 		.copyright {
+			flex-wrap: wrap;
 			text-align: end;
 			font-size: 0.6rem;
 			font-weight: 400;
 			margin-right: 10px;
 			margin-bottom: 20px;
 		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.headerLogoContainer {
+		.menuContainer {
+			.menuItem {
+				width: 100%;
+			}
+		}
+	}
+	.footerLogoContainer {
+		.logo80s {
+			height: 30px;
+			width: auto;
+		}
+		.footerContainer {
+			background-color: $menuHover;
+			width: 100%;
+			color: white;
+
+			.footerContent {
+				flex-wrap: wrap;
+				margin: auto;
+			}
+			.footerContent > .row > h4 {
+				font-size: 0.5rem;
+			}
+			.footerContent > .row > p {
+				flex-wrap: wrap;
+				font-size: 0.4rem;
+				font-weight: 300;
+			}
+			.copyright {
+				text-align: end;
+				font-size: 0.4rem;
+				font-weight: 400;
+				margin-right: 10px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.headerLogoContainer .burger {
+		padding: 0px 20px 0px 40px;
 	}
 }
