@@ -63,7 +63,7 @@ $invertedEdge: rgba(97, 97, 97, 0.25) 0px 30px 60px 12px inset,
 
 .carousel {
 	margin: auto;
-	margin-top: 5vh;
+	margin-top: 100px;
 	border-radius: 30px;
 	background-color: white;
 	width: 50vw;
@@ -96,6 +96,10 @@ $invertedEdge: rgba(97, 97, 97, 0.25) 0px 30px 60px 12px inset,
 
 @media only screen and (max-width: 1300px) {
 	.carousel {
+		.carousel {
+			margin-top: 15vh;
+			z-index: 1;
+		}
 		justify-self: center;
 		width: 510px;
 		border-radius: 0px;
@@ -117,6 +121,8 @@ $invertedEdge: rgba(97, 97, 97, 0.25) 0px 30px 60px 12px inset,
 }
 @media only screen and (max-width: 1000px) {
 	.carousel {
+		margin-top: 15vh;
+		z-index: 1;
 		justify-self: center;
 		width: 80%;
 		border-radius: 0px;

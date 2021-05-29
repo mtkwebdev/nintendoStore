@@ -10,7 +10,7 @@ function LatestNews() {
         <div className="latestNews card">
            <h1> | Latest News</h1>
         <ul>
-            <li className="newsCard">
+            <li className="newsCard ">
                 <h1>Weekly download news</h1> 
                 <div className="row">
                 <img className="icon" src={news} alt="" /> 

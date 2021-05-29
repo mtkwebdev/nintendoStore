@@ -44,7 +44,7 @@ function MainPage() {
              </div>
 
 
-            <div className=" switchBundles">
+            <div className=" storeBundles">
             <h1 className="h1 ">Store Bundles</h1>
 
             <div className="bundle" id="bundle1" >

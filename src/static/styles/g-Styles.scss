@@ -24,12 +24,38 @@ $hoveringEdge3: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 	rgba(0, 0, 0, 0.22) 0px 15px 12px;
 $card: #f8f8f8;
 
+.blurEdge {
+	box-shadow: $blurEdge;
+}
+.softEdge {
+	box-shadow: $softEdge;
+}
+.justAnEdge {
+	box-shadow: $justAnEdge;
+}
+.bigCardEdge {
+	box-shadow: $bigCardEdge;
+}
+.invertedEdge {
+	box-shadow: $invertedEdge;
+}
+.hoveringEdge1 {
+	box-shadow: $hoveringEdge1;
+}
+.hoveringEdge2 {
+	box-shadow: $hoveringEdge2;
+}
+.hoveringEdge3 {
+	box-shadow: $hoveringEdge3;
+}
+
 .metalEdge:hover {
 	box-shadow: $metalEdge;
 }
 .heroEdge:hover {
 	box-shadow: $heroEdge;
 }
+
 .col {
 	display: flex;
 	flex-direction: column;

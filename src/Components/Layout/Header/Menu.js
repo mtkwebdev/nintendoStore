@@ -1,25 +1,25 @@
-import React from 'react'
-
+import React, {useState} from 'react'
+import {menuData} from './menuData'
 import '../Layout.scss'
-import nswitch from '../../../static/images/menuIcons/switch.png'
-import ngames from '../../../static/images/menuIcons/games.png'
+
 
 function Menu() {
+    const [showMenu, setShowMenu] = useState(false);
+const menuClick = () => {setShowMenu(!showMenu)};
+
+//onClick={window.location.pathname = val.link}
     return (
-        <div >
-            <nav className="menuContainer">
-            <li className='menu' ><img className="menuIcon " src={nswitch} alt="" /> Switch Family</li>
-                <li className='menu' ><img className="menuIcon " src={ngames} alt="" /> Games </li>
-                <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
-                <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
-                <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
-                {/* <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
-                <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li>
-                <li className='menu' ><img className="menuIcon" src={nswitch} alt="" />Menu Item</li> */}
-         
-  
-            </nav>
+         <div className="menuContainer">
+            <div className="burger" onClick={menuClick}>☰</div>
+            {showMenu ?<div onClick={menuClick} className="menuContainer">
+            {menuData.map((val,key)=>{return(
+                <div className="menuItem" key={key} >
+                    <div>{val.title}</div>
+                    <div>{val.icon}</div>
+                </div> )})}
+            </div>:null}
         </div>
+
     )
 }
 

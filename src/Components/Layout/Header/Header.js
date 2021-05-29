@@ -6,14 +6,13 @@ import '../Layout.scss'
 //Component Assets
 
 function Header() {
+
     return (
         <div>
-        <div className="headerLogoContainer" >
+        <div className="headerLogoContainer " >
         <div className="logo" ><img src={logo} className="logo" alt="Nintendo Logo" /></div>
-        
-        <Menu></Menu>
+         <Menu></Menu>
         </div>
-            
         </div>
     )
 }
