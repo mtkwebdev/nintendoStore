@@ -3,31 +3,31 @@ import LatestNews from './LatestNews'
 
 //
 import './home.scss'
-import '../../static/styles/g-Styles.scss'
+import '../../../static/styles/globalStyles.scss'
 
 //imageImports
 ////NEWGAMES
-import pkmnSnap from '../../static/images/newGames/pkmnSnap.jpeg'
-import amiibo from '../../static/images/newGames/amiibo.jpeg'
-import animalCrossing from '../../static/images/newGames/animalCrossing.jpeg'
-import marioGolf from '../../static/images/newGames/marioGolf.jpeg'
-import pacman from '../../static/images/newGames/pacman.jpeg'
-import superMario3dWorld from '../../static/images/games/superMario/superMario3dWorld.jpg'
+import pkmnSnap from '../../../static/images/newGames/pkmnSnap.jpeg'
+import amiibo from '../../../static/images/newGames/amiibo.jpeg'
+import animalCrossing from '../../../static/images/newGames/animalCrossing.jpeg'
+import marioGolf from '../../../static/images/newGames/marioGolf.jpeg'
+import pacman from '../../../static/images/newGames/pacman.jpeg'
+import superMario3dWorld from '../../../static/images/games/superMario/superMario3dWorld.jpg'
 
 //Switch Bundles
-import bundle1 from '../../static/images/store/normalConsoleSwitch.png'
-import bundle2 from '../../static/images/store/greyComsoleSwitch.png'
-import bundle3 from '../../static/images/store/animalCrossingBundle.png'
-import bundle4 from '../../static/images/store/monsterHunter.png'
+import bundle1 from '../../../static/images/store/normalConsoleSwitch.png'
+import bundle2 from '../../../static/images/store/greyComsoleSwitch.png'
+import bundle3 from '../../../static/images/store/animalCrossingBundle.png'
+import bundle4 from '../../../static/images/store/monsterHunter.png'
 
 //eshop
-import eshop from '../../static/images/svg/mainPageContent/eShop.svg'
+import eshop from '../../../static/images/svg/mainPageContent/eShop.svg'
 
 function MainPage() {
     return (
      <article className="container">
     
-        <section className="mainPageGrid">
+        <section className="contentContainer">
         <LatestNews> </LatestNews>
         
             <div className=" newGames "> 

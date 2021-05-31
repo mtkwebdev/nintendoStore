@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Layout.scss'
 import logo80s from '../../../static/images/logo80s.png'
 
 function Footer() {

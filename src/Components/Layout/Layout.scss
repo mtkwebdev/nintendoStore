@@ -3,13 +3,10 @@ $nintendoRed: rgb(230, 0, 0);
 $menuHover: rgb(200, 0, 0);
 $paperWhite: rgb(237, 239, 241);
 
-.invisible {
-	display: none;
-	transition: width 2s ease-in-out;
-}
-.visible {
-	display: flex;
-	transition: width 2s ease-in-out;
+.h1 {
+	grid-column: 1 / 1;
+	grid-row: 1/ 1;
+	font-size: 2rem;
 }
 
 .headerLogoContainer {
@@ -22,6 +19,8 @@ $paperWhite: rgb(237, 239, 241);
 	z-index: 5;
 	margin: auto;
 	background-color: $nintendoRed;
+	top: 0;
+	margin-bottom: 100px;
 	.logo {
 		align-self: flex-start;
 		height: 80px;
@@ -76,6 +75,17 @@ $paperWhite: rgb(237, 239, 241);
 			border: solid 1px rgb(142, 0, 0);
 		}
 	}
+}
+
+.contentContainer {
+	margin: auto;
+	// margin-top: 100px;
+	width: 80%;
+	height: fit-content;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-auto-rows: auto;
+	gap: 20px;
 }
 
 .footerLogoContainer {

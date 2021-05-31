@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.css";
-
 import "swiper/components/pagination/pagination.min.css"
 import './hero.scss'
 

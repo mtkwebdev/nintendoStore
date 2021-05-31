@@ -1,9 +1,9 @@
 import React from 'react'
 
 import './home.scss'
-import '../../static/styles/g-Styles.scss'
+import '../../../static/styles/globalStyles.scss'
 
-import news from '../../static/images/news/news.jpeg'
+import news from '../../../static/images/news/news.jpeg'
 
 function LatestNews() {
     return (

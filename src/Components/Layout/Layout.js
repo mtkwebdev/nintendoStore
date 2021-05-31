@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../static/styles/g-Styles.scss'
+import '../../static/styles/globalStyles.scss'
 import Header from  './Header/Header'
 import Footer from './Footer/Footer'
 
@@ -7,7 +7,7 @@ const Layout =({children}) => {
     return (
         <div>
             <Header></Header>
-            {children}
+            <main>{children}</main>
             <Footer></Footer>
         </div>
     )

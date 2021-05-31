@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-//font-family: 'Poppins', sans-serif;
+$poppins: "Poppins", sans-serif;
 $nintendoRedLight-10: rgb(255, 0, 0);
 $nintendoRed: rgb(230, 0, 0);
 $menuHover: rgb(200, 0, 0);
@@ -69,26 +69,27 @@ $card: #f8f8f8;
 	cursor: pointer;
 }
 
+.invisible {
+	display: none;
+	transition: width 2s ease-in-out;
+}
+.visible {
+	display: flex;
+	transition: width 2s ease-in-out;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: "Poppins", sans-serif;
+	font-family: $poppins;
 }
-body {
-	display: grid;
-}
+// body {
+// 	display: grid;
+// }
 
 Main {
-	width: 90%;
-	height: auto;
+	padding-top: 80px;
+	height: 100%;
 	margin: auto;
-	// margin-top: 10vh;
-
-	span {
-		color: $nintendoRed;
-	}
-	span:hover {
-		color: $nintendoRedLight-10;
-	}
 }
