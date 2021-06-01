@@ -25,11 +25,9 @@ import eshop from '../../../static/images/svg/mainPageContent/eShop.svg'
 
 function MainPage() {
     return (
-     <article className="container">
-    
+     <article className="homePage">
         <section className="contentContainer">
         <LatestNews> </LatestNews>
-        
             <div className=" newGames "> 
             <h1 className="h1">New Games</h1>
             <img className="scaleAnimation heroEdge" id="pkmnSnap" src={pkmnSnap} alt="Pokemon Snap!" />
@@ -38,9 +36,6 @@ function MainPage() {
             <img className="scaleAnimation heroEdge" id="marioGolf" src={marioGolf} alt="" />
             <img className="scaleAnimation heroEdge" id="pacman" src={pacman} alt="" />
             <img className="scaleAnimation heroEdge" id="superMario3dWorld" src={superMario3dWorld} alt="" />
-            
-            
-            
              </div>
 
 

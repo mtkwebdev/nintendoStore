@@ -1,4 +1,6 @@
 import React from 'react'
+
+//images
 import nswitch from '../../../static/images/svg/switch.svg'
 import games from '../../../static/images/svg/games.svg'
 import eShop from '../../../static/images/svg/eshop.svg'
