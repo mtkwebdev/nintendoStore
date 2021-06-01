@@ -3,7 +3,9 @@ $poppins: "Poppins", sans-serif;
 $nintendoRedLight-10: rgb(255, 0, 0);
 $nintendoRed: rgb(230, 0, 0);
 $menuHover: rgb(200, 0, 0);
-$paperWhite: rgb(237, 239, 241);
+$paperWhite: rgb(245, 245, 245);
+$lightGrey: rgb(237, 239, 241);
+
 //box-shaddows:
 $blurEdge: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 $softEdge: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -49,6 +51,9 @@ $card: #f8f8f8;
 	box-shadow: $hoveringEdge3;
 }
 
+.metalEdge {
+	box-shadow: $metalEdge;
+}
 .metalEdge:hover {
 	box-shadow: $metalEdge;
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {menuData} from './menuData'
+import { Link } from "gatsby"
 import '../Layout.scss'
 
 
@@ -13,10 +14,11 @@ const menuClick = () => {setShowMenu(!showMenu)};
             <div className="burger" onClick={menuClick}>☰</div>
             {showMenu ?<div onClick={menuClick} className="menuContainer">
             {menuData.map((val,key)=>{return(
-                <div className="menuItem" key={key} >
+                <Link to={val.link} className="menuItem" key={key}>
                     <div>{val.title}</div>
                     <div>{val.icon}</div>
-                </div> )})}
+                </Link>
+                )})}
             </div>:null}
         </div>
 

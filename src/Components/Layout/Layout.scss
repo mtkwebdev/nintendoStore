@@ -1,7 +1,6 @@
 $nintendoRedLight-10: rgb(255, 0, 0);
 $nintendoRed: rgb(230, 0, 0);
 $menuHover: rgb(200, 0, 0);
-$paperWhite: rgb(237, 239, 241);
 
 .h1 {
 	grid-column: 1 / 1;
@@ -46,7 +45,7 @@ $paperWhite: rgb(237, 239, 241);
 		margin-top: 10px;
 
 		.menuItem {
-			// margin-right: -5%;
+			text-decoration: none;
 			cursor: pointer;
 			z-index: 5;
 			display: flex;
@@ -79,7 +78,7 @@ $paperWhite: rgb(237, 239, 241);
 
 .contentContainer {
 	margin: auto;
-	// margin-top: 100px;
+	margin-top: 100px;
 	width: 80%;
 	height: fit-content;
 	display: grid;
@@ -94,6 +93,7 @@ $paperWhite: rgb(237, 239, 241);
 	flex-direction: column;
 	align-items: flex-start;
 	background-color: $nintendoRed;
+	margin-top: 50px;
 
 	.logo80s {
 		height: 50px;
