@@ -83,9 +83,9 @@ function MainPage() {
             
 
 
-            <div className="registerEshop">
+            <Link to="/nintendoswitch" className="registerEshop">
                 <img src={eshop} alt="" />
-            </div>
+            </Link>
             <div className="moreGames">moreGames</div>
         </section>
      </article>

@@ -39,6 +39,7 @@ function nintendoSwitch() {
            <Link to={val.link} className="products justAnEdge" key={key} >
                <img className="productImage" src={val.src}></img>
                <div className="productName">{val.name}</div>
+               <div className="productNew"> {val.new}</div>
                <div className="productInStock"> {val.stock}</div>
                <div className="productDescription">{val.description}</div>
                <div className="productPrice">{val.price}</div>

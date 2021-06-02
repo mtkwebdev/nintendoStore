@@ -46,29 +46,29 @@ export const menuData = [
         icon: <img className="menuIcon" src={news} alt=""/>,
         link: "/news"
     },
-    {
-        title:"Extra Menu Item",
-        icon: <img className="menuIcon" src={news} alt=""/>,
-        link: "/news"
-    },
-    {
-        title:"Extra Menu Item test scroll very long title, and very long title, and very long title, ",
-        icon: <img className="menuIcon" src={news} alt=""/>,
-        link: "/news"
-    },
-    {
-        title:"Extra Menu Item test scroll 1",
-        icon: <img className="menuIcon" src={news} alt=""/>,
-        link: "/news"
-    },
-    {
-        title:"Extra Menu Item test scroll 2",
-        icon: <img className="menuIcon" src={news} alt=""/>,
-        link: "/news"
-    },
-    {
-        title:"Extra Menu Item test scroll 3",
-        icon: <img className="menuIcon" src={news} alt=""/>,
-        link: "/news"
-    },
+    // {
+    //     title:"Extra Menu Item",
+    //     icon: <img className="menuIcon" src={news} alt=""/>,
+    //     link: "/news"
+    // },
+    // {
+    //     title:"Extra Menu Item test scroll very long title, and very long title, and very long title, ",
+    //     icon: <img className="menuIcon" src={news} alt=""/>,
+    //     link: "/news"
+    // },
+    // {
+    //     title:"Extra Menu Item test scroll 1",
+    //     icon: <img className="menuIcon" src={news} alt=""/>,
+    //     link: "/news"
+    // },
+    // {
+    //     title:"Extra Menu Item test scroll 2",
+    //     icon: <img className="menuIcon" src={news} alt=""/>,
+    //     link: "/news"
+    // },
+    // {
+    //     title:"Extra Menu Item test scroll 3",
+    //     icon: <img className="menuIcon" src={news} alt=""/>,
+    //     link: "/news"
+    // },
 ]

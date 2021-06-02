@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "gatsby"
 import ImageSlider from './ImageSlider'
 import './hero.scss'
 
@@ -7,7 +8,7 @@ function Hero() {
     return (
         <div className="heroGrid">
         <div></div>
-        <ImageSlider className="carousel"></ImageSlider>
+        <Link to="/nintendoswitch"><ImageSlider className="carousel"></ImageSlider></Link>
         <div></div>
         </div>
        
