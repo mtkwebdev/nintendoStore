@@ -1,5 +1,6 @@
 import React from 'react'
 import LatestNews from './LatestNews'
+import {Link} from "gatsby"
 
 //
 import './home.scss'
