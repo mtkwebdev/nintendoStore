@@ -47,6 +47,7 @@ function MainPage() {
                 <img className="bundle pointer scaleAnimation metalEdge" src={bundle1} alt="" />
                 <div className="bundlesOverlay pointer">
                     <h1 className="text">Original Switch Bundle</h1>
+                    <div className="productInStock">In Stock</div>
                     <p className="text">£299</p>
                 </div>
             </Link>
@@ -55,6 +56,7 @@ function MainPage() {
             <img className="bundle pointer scaleAnimation metalEdge" src={bundle2} alt="" />
                 <div className="bundlesOverlay pointer">
                     <h1 className="text">Grey Switch Bundle</h1>
+                    <div className="productInStock">In Stock</div>
                     <p className="text">£299</p>
                 </div>
             </Link>
@@ -62,8 +64,8 @@ function MainPage() {
             <Link to="/outofstock" className="bundle" id="bundle3" >
             <img className="bundle pointer scaleAnimation metalEdge" src={bundle3} alt="" />
                 <div className="bundlesOverlay pointer">
-                    <h1 className="text">Animal Crossing Switch Bundle <div className="productNotInStock">Out of Stock</div></h1>
-           
+                    <h1 className="text">Animal Crossing Switch Bundle </h1>
+                    <div className="productNotInStock">Out of Stock</div>
                     <p className="text">£320</p>
                 </div>
             </Link>
@@ -72,6 +74,7 @@ function MainPage() {
             <img className="bundle pointer scaleAnimation metalEdge" src={bundle4} alt="" />
                 <div className="bundlesOverlay pointer">
                     <h1 className="text">Monster Hunter Switch Bundle</h1>
+                    <div className="productInStock">In Stock</div>
                     <p className="text">£320</p>
                 </div>
             </Link>
