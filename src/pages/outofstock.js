@@ -2,12 +2,12 @@ import React from 'react'
 import '../static/styles/globalStyles.scss';
 import Layout from '../Components/Layout/AllPages/Layout';
 
-function news() {
+function outofstock() {
     return (
         <Layout>
-            <h1>Under Construction</h1>
+            <h1>Sorry this product is out of stock</h1>
         </Layout>
     )
 }
 
-export default news
+export default outofstock

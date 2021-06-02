@@ -10,10 +10,10 @@ import "swiper/components/pagination/pagination.min.css"
 import './hero.scss'
 
 //
-import pic1 from '../../static/images/svg/slider/gameBuilder.svg'
-import pic2 from '../../static/images/svg/slider/switchYellow.svg'
-import pic3 from '../../static/images/svg/slider/switchBlue.svg'
-import pic4 from '../../static/images/svg/slider/myNintendo.svg'
+import pic1 from '../../../../static/images/svg/slider/gameBuilder.svg'
+import pic2 from '../../../../static/images/svg/slider/switchYellow.svg'
+import pic3 from '../../../../static/images/svg/slider/switchBlue.svg'
+import pic4 from '../../../../static/images/svg/slider/myNintendo.svg'
 
 
 // import Swiper core and required modules

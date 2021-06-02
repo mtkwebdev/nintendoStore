@@ -1,6 +1,6 @@
 import React from 'react'
 import '../static/styles/globalStyles.scss';
-import Layout from '../Components/Layout/Layout';
+import Layout from '../Components/Layout/AllPages/Layout';
 
 function games() {
     return (

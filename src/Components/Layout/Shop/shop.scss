@@ -5,7 +5,6 @@ $paperWhite: rgb(245, 245, 245);
 	grid-column: 2/4;
 	padding-left: 50px;
 	margin-top: 10px;
-	margin-bottom: 10px;
 	font-size: 2rem;
 }
 
@@ -14,7 +13,6 @@ $paperWhite: rgb(245, 245, 245);
 	padding-top: 40px;
 	border-radius: 20px;
 	background-color: $lightGrey;
-	margin-top: 100px;
 	grid-column: 2 / 5;
 	grid-row: auto/ auto;
 	text-decoration: none;
@@ -34,7 +32,6 @@ $paperWhite: rgb(245, 245, 245);
 	padding: 30px;
 	padding-top: 40px;
 	border-radius: 20px;
-	background-color: $paperWhite;
 }
 .options > h3 {
 	font-weight: 600;
@@ -74,17 +71,47 @@ $paperWhite: rgb(245, 245, 245);
 	color: grey;
 }
 
-.productStock {
+.productInStock {
 	background: green;
 	color: white;
 	font-size: 0.6rem;
 	font-weight: 600;
 	height: min-content;
-	width: 50px;
+	width: 30%;
+	text-align: center;
+}
+.productNotInStock {
+	background: grey;
+	color: white;
+	font-size: 0.5rem;
+	font-weight: 600;
+	height: min-content;
+	width: 30%;
+	margin: auto;
+	text-align: center;
+}
+.productNew {
+	background: black;
+	color: white;
+	font-size: 0.5rem;
+	font-weight: 600;
+	height: min-content;
 	text-align: center;
 }
 .productPrice {
+	display: flex;
+	justify-content: space-evenly;
 	font-size: 0.8rem;
+	font-weight: 600;
+	width: 100%;
+	color: rgb(0, 0, 0);
+}
+.productPrice2 {
+	display: flex;
+	text-align: center;
+	justify-self: center;
+	justify-content: space-evenly;
+	font-size: 1rem;
 	font-weight: 600;
 	width: 100%;
 	color: rgb(0, 0, 0);

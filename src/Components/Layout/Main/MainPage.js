@@ -1,9 +1,9 @@
 import React from 'react'
 import LatestNews from './LatestNews'
 import {Link} from "gatsby"
-
 //
-import './home.scss'
+import './main.scss'
+import '../Shop/shop.scss'
 import '../../../static/styles/globalStyles.scss'
 
 //imageImports
@@ -43,37 +43,38 @@ function MainPage() {
             <div className=" storeBundles">
             <h1 className="h1 ">Store Bundles</h1>
 
-            <div className="bundle" id="bundle1" >
+            <Link to="/nintendoswitch" className="bundle" id="bundle1" >
                 <img className="bundle pointer scaleAnimation metalEdge" src={bundle1} alt="" />
                 <div className="bundlesOverlay pointer">
-                    <h1>Original Switch Bundle</h1>
-                    <p>£299</p>
+                    <h1 className="text">Original Switch Bundle</h1>
+                    <p className="text">£299</p>
                 </div>
-            </div>
+            </Link>
 
-            <div className="bundle"  id="bundle2">
+            <Link to="/nintendoswitch" className="bundle"  id="bundle2">
             <img className="bundle pointer scaleAnimation metalEdge" src={bundle2} alt="" />
                 <div className="bundlesOverlay pointer">
-                    <h1>Grey Switch Bundle</h1>
-                    <p>£299</p>
+                    <h1 className="text">Grey Switch Bundle</h1>
+                    <p className="text">£299</p>
                 </div>
-            </div>
+            </Link>
             
-            <div className="bundle" id="bundle3" >
+            <Link to="/outofstock" className="bundle" id="bundle3" >
             <img className="bundle pointer scaleAnimation metalEdge" src={bundle3} alt="" />
                 <div className="bundlesOverlay pointer">
-                    <h1>Animal Crossing Switch Bundle</h1>
-                    <p>£320</p>
+                    <h1 className="text">Animal Crossing Switch Bundle <div className="productNotInStock">Out of Stock</div></h1>
+           
+                    <p className="text">£320</p>
                 </div>
-            </div>
+            </Link>
 
-            <div className="bundle" id="bundle4" >
+            <Link to="/nintendoswitch" className="bundle" id="bundle4" >
             <img className="bundle pointer scaleAnimation metalEdge" src={bundle4} alt="" />
                 <div className="bundlesOverlay pointer">
-                    <h1>Monster Hunter Switch Bundle</h1>
-                    <p>£320</p>
+                    <h1 className="text">Monster Hunter Switch Bundle</h1>
+                    <p className="text">£320</p>
                 </div>
-            </div>
+            </Link>
 
             </div>
             

@@ -11,8 +11,8 @@ const menuClick = () => {setShowMenu(!showMenu)};
 //onClick={window.location.pathname = val.link}
     return (
          <div className="menuContainer">
-            <div className="burger" onClick={menuClick}>☰</div>
-            {showMenu ?<div onClick={menuClick} className="menuContainer">
+        <div className="burger" onClick={menuClick}>☰</div>
+            {showMenu ?<div onClick={menuClick} className="menuContainer scroll">
             {menuData.map((val,key)=>{return(
                 <Link to={val.link} className="menuItem" key={key}>
                     <div>{val.title}</div>

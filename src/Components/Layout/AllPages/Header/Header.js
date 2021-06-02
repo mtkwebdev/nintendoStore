@@ -1,6 +1,6 @@
 import React from 'react'
 import Menu from './Menu'
-import logo from '../../../static/images/logo.png'
+import logo from '../../../../static/images/logo.png'
 import '../Layout.scss'
 
 //Component Assets

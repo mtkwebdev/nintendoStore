@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './home.scss'
+import './main.scss'
 import '../../../static/styles/globalStyles.scss'
 
 import news from '../../../static/images/news/news.jpeg'
